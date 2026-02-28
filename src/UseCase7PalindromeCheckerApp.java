@@ -1,16 +1,21 @@
-public class UseCase3PalindromeCheckerApp {
+import java.util.*;
+public class UseCase7PalindromeCheckerApp {
     public static void main(String[] args){
 
-        String input = "level";
-        boolean ispalindrome = true;
-
-        for(int i = input.length() - 1 ; i >= 0 ; i-- ){
-            if(input.charAt(i) != input.charAt(input.length() - i - 1)){
-                ispalindrome = false;
-            }
+        String input = "refer";
+        Deque<Character> deque = new ArrayDeque<>();
+        for (char c : input.toCharArray()) {
+            deque.add(c);
         }
+        boolean isPalindrome = true;
+        while (deque.size() > 1)
+            { if (!deque.removeFirst().equals(deque.removeLast()))
+                { isPalindrome = false;
+                    break;
+                }
+            }
         System.out.println("UC3 Input: " + input);
-        System.out.println("Palindrome: " + ispalindrome + "\n");
+        System.out.println("Palindrome: " + isPalindrome + "\n");
 
     }
 }
