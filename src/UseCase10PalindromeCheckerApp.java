@@ -1,4 +1,4 @@
-public class UseCase9PalindromeCheckerApp {
+public class UseCase10PalindromeCheckerApp {
 
 
 
@@ -15,11 +15,15 @@ public class UseCase9PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        String input = "level";
+        String input = "a man a plan a canal panama";
+        String lowerCaseInput = input.toLowerCase();
+        String noSpace = input.replaceAll("\\s", "");
 
-        boolean result = isPalindrome(input, 0, input.length()-1);
+        boolean result = isPalindrome(noSpace, 0, noSpace.length()-1);
 
         System.out.println("UC9 Input: " + input);
+        System.out.println("LowerCase converted Input: " + lowerCaseInput);
+        System.out.println("NoSpace converted Input: " + noSpace);
         System.out.println("Palindrome: " + result + "\n");
 
     }
