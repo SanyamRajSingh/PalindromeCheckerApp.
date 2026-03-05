@@ -21,7 +21,7 @@ public class UseCase10PalindromeCheckerApp {
 
         boolean result = isPalindrome(noSpace, 0, noSpace.length()-1);
 
-        System.out.println("UC9 Input: " + input);
+        System.out.println("UC10 Input: " + input);
         System.out.println("LowerCase converted Input: " + lowerCaseInput);
         System.out.println("NoSpace converted Input: " + noSpace);
         System.out.println("Palindrome: " + result + "\n");
