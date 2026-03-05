@@ -20,7 +20,7 @@ public class UseCase5PalindromeCheckerApp {
 
 
 
-        System.out.println("UC3 Input: " + input);
+        System.out.println("UC5 Input: " + input);
         System.out.println("Palindrome: " + ispalindrome + "\n");
 
     }
